@@ -16,5 +16,12 @@ namespace _21341
         {
             InitializeComponent();
         }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            Form form = new Form1();
+            form.Show();
+            this.Hide();
+        }
     }
 }

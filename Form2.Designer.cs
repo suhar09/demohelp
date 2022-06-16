@@ -50,6 +50,7 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +59,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(16, 17);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(144, 141);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -69,18 +70,19 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(227)))), ((int)(((byte)(131)))));
             this.button1.Location = new System.Drawing.Point(16, 238);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 53);
             this.button1.TabIndex = 1;
             this.button1.Text = "Добавить ";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(227)))), ((int)(((byte)(131)))));
             this.button2.Location = new System.Drawing.Point(16, 299);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(136, 53);
             this.button2.TabIndex = 2;
@@ -91,7 +93,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(227)))), ((int)(((byte)(131)))));
             this.button3.Location = new System.Drawing.Point(16, 360);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(136, 53);
             this.button3.TabIndex = 3;
@@ -102,7 +104,7 @@
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(227)))), ((int)(((byte)(131)))));
             this.button5.Location = new System.Drawing.Point(16, 667);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(136, 53);
             this.button5.TabIndex = 5;
@@ -113,7 +115,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(227)))), ((int)(((byte)(131)))));
             this.button4.Location = new System.Drawing.Point(291, 17);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(196, 42);
             this.button4.TabIndex = 6;
@@ -124,7 +126,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(168, 67);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1021, 456);
             this.dataGridView1.TabIndex = 7;
@@ -133,7 +135,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(543, 17);
+            this.label1.Location = new System.Drawing.Point(517, 17);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 18);
@@ -143,7 +145,7 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Location = new System.Drawing.Point(599, 9);
+            this.textBox1.Location = new System.Drawing.Point(573, 9);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(125, 26);
             this.textBox1.TabIndex = 9;
@@ -151,7 +153,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(748, 17);
+            this.label2.Location = new System.Drawing.Point(704, 17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 18);
             this.label2.TabIndex = 10;
@@ -161,15 +163,20 @@
             // 
             this.comboBox1.BackColor = System.Drawing.SystemColors.Control;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(834, 9);
+            this.comboBox1.Items.AddRange(new object[] {
+            "Золото",
+            "Серебро ",
+            "Платина"});
+            this.comboBox1.Location = new System.Drawing.Point(790, 9);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 26);
+            this.comboBox1.Size = new System.Drawing.Size(166, 26);
             this.comboBox1.TabIndex = 11;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(976, 17);
+            this.label3.Location = new System.Drawing.Point(962, 17);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 18);
             this.label3.TabIndex = 12;
@@ -179,10 +186,15 @@
             // 
             this.comboBox2.BackColor = System.Drawing.SystemColors.Control;
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(1033, 9);
+            this.comboBox2.Items.AddRange(new object[] {
+            "По популярности ",
+            "По стоимости ",
+            "По дате "});
+            this.comboBox2.Location = new System.Drawing.Point(1019, 9);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 26);
+            this.comboBox2.Size = new System.Drawing.Size(170, 26);
             this.comboBox2.TabIndex = 13;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // button6
             // 
@@ -272,11 +284,24 @@
             this.button13.Text = "Последняя";
             this.button13.UseVisualStyleBackColor = false;
             // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(227)))), ((int)(((byte)(131)))));
+            this.button14.Location = new System.Drawing.Point(1278, 9);
+            this.button14.Margin = new System.Windows.Forms.Padding(4);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(104, 39);
+            this.button14.TabIndex = 22;
+            this.button14.Text = "Выйти";
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1444, 648);
+            this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
@@ -300,9 +325,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form2";
-            this.Text = "Поиск";
+            this.Text = "Редактирование каталога";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -333,5 +358,6 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
     }
 }

@@ -16,5 +16,29 @@ namespace _21341
         {
             InitializeComponent();
         }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            Form form = new Form1();
+            form.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form form = new Form4();
+            form.Show();
+            this.Hide();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
