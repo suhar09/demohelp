@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace _21341
 {
-    public partial class Form3 : Form
+    public partial class Form2 : Form
     {
-        public Form3()
+        public Form2()
         {
             InitializeComponent();
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-            Form form = new Form1();
-            form.Show();
-            this.Hide();
         }
     }
 }

@@ -1,0 +1,14 @@
+D:\demo\21341\21341\bin\Debug\21341.exe.config
+D:\demo\21341\21341\bin\Debug\21341.exe
+D:\demo\21341\21341\bin\Debug\21341.pdb
+D:\demo\21341\21341\obj\Debug\21341.csproj.AssemblyReference.cache
+D:\demo\21341\21341\obj\Debug\21341.csproj.SuggestedBindingRedirects.cache
+D:\demo\21341\21341\obj\Debug\_21341.Form1.resources
+D:\demo\21341\21341\obj\Debug\_21341.Properties.Resources.resources
+D:\demo\21341\21341\obj\Debug\21341.csproj.GenerateResource.cache
+D:\demo\21341\21341\obj\Debug\21341.csproj.CoreCompileInputs.cache
+D:\demo\21341\21341\obj\Debug\21341.exe
+D:\demo\21341\21341\obj\Debug\21341.pdb
+D:\demo\21341\21341\obj\Debug\_21341.Form2.resources
+D:\demo\21341\21341\obj\Debug\_21341.Form3.resources
+D:\demo\21341\21341\obj\Debug\_21341.Form4.resources
